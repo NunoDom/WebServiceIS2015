@@ -21,7 +21,7 @@ namespace WebServiceIS2015
         {
             if (composite == null)
             {
-                throw new ArgumentNullException("composite");
+                throw new ArgumentNullException("composi  te");
             }
             if (composite.BoolValue)
             {
