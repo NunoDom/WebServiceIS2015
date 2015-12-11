@@ -25,9 +25,18 @@ namespace WebServiceIS2015
             }
             if (composite.BoolValue)
             {
-                composite.StringValue += "Suffix";
+                composite.StringValue += "Suf fix";
             }
             return composite;
+        }
+
+
+
+
+        public Boolean ReceiveData(string value)
+        {
+
+            return true;
         }
     }
 }
