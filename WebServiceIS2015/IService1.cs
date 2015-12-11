@@ -22,6 +22,9 @@ namespace WebServiceIS2015
         [OperationContract]
         Boolean ReceiveData(string value);
 
+        [OperationContract]
+        Boolean GetXMLData(string value);
+
 
 
 
