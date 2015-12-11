@@ -19,6 +19,12 @@ namespace WebServiceIS2015
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
+        [OperationContract]
+        Boolean ReceiveData(string value);
+
+
+
+
         // TODO: Add your service operations here
     }
 

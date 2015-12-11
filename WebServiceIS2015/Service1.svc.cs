@@ -29,5 +29,14 @@ namespace WebServiceIS2015
             }
             return composite;
         }
+
+
+
+
+        public Boolean ReceiveData(string value)
+        {
+
+            return true;
+        }
     }
 }
