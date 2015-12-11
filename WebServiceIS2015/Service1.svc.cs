@@ -38,5 +38,11 @@ namespace WebServiceIS2015
 
             return true;
         }
+
+        public Boolean GetXMLData(string value)
+        {
+
+            return true;
+        }
     }
 }
