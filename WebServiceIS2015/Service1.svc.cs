@@ -66,5 +66,104 @@ namespace WebServiceIS2015
 
            
         }
+
+
+        public string GetCustoMedioMedicoEnfTec(DateTime dataInicio, DateTime dataFim)
+        {
+
+            return null;
+
+        }
+
+        //número de funcionários;
+
+        public string GetNumeroFuncionarios(DateTime dataInicio, DateTime dataFim)
+        {
+            if (xmlFile != null)
+            {
+                XmlNodeList nodeMedicos = xmlFile.SelectNodes("//PessoalAoServiço/Médicos/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
+                XmlNodeList nodeTecnicosDeDiagonostico = xmlFile.SelectNodes("//PessoalAoServiço/Técnicosdediagnósticoeterapêutica/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
+                XmlNodeList nodeEnfermeiros = xmlFile.SelectNodes("//PessoalAoServiço/Enfermeiros/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
+                XmlNodeList nodePessoaldeEnfermagem = xmlFile.SelectNodes("//PessoalAoServiço/Pessoaldeenfermagem/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
+
+                int x1 = nodeMedicos.Count;
+                StringBuilder sb = new StringBuilder();
+
+                for (int i = 0; i < nodeMedicos.Count; i++)
+                {
+                   // sb.Append(nodeMedicos[i].InnerText.ToString());
+                }
+                sb.AppendLine("Numero de Medicos: "+nodeMedicos[0].InnerText);
+                sb.AppendLine("Numero de Tecnico de Diagonostico: "+nodeTecnicosDeDiagonostico[0].InnerText);
+                sb.AppendLine("Numero de Enfermeiros: "+nodeEnfermeiros[0].InnerText);
+                sb.AppendLine("Numero de Pessoal de Enfermagem: "+nodePessoaldeEnfermagem[0].InnerText);
+                return sb.ToString();
+            }
+            else
+                return "Numoro de Funcionarios : "+"";
+
+        }
+
+        //número de médicos, enfermeiros e técnicos;
+
+        public string GetNumeroMedicosEnfermeirosTecnico(DateTime dataInicio, DateTime dataFim) 
+        {
+            return null;
+        }
+
+
+
+        //percentagem dos custos com medicamentos face à despesa total;
+        public string GetPercentagemCustosMedicamentosDespesaTotal(DateTime dataInicio, DateTime dataFim)
+        {
+            return null;
+
+        }
+
+        //percentagem dos custos com utentes face à despesa total;
+
+        public string GetPercentagemCustosUtentesDespesaTotal(DateTime dataInicio, DateTime dataFim)
+        {
+            return null;
+
+        }
+
+        //número de consultas, internamentos e urgências em hospitais;
+
+        public string GetNumeroCOnsultasInternamentosUrgencias(DateTime dataInicio, DateTime dataFim)
+        {
+            return null;
+
+        }
+
+        //percentagem de consultas, internamentos e urgências em centros de saúde e extensões face ao total de ocorrências;
+
+        public string GetPercentagemConsultasIternamentosUrgenciasCentrosSaudeExtencoes(DateTime dataInicio, DateTime dataFim)
+        {
+            return null;
+
+        }
+
+        //média do número de camas disponíveis nos hospitais;
+
+        public string GetMediaCamasHospital(DateTime dataInicio, DateTime dataFim)
+        {
+            return null;
+
+        }
+
+        // rácio entre o número de funcionários e número de estabelecimentos.
+
+        public string GetRacioNumeroFuncionariosNumeroEstabelecimentos(DateTime dataInicio, DateTime dataFim)
+        {
+            return null;
+
+        }
+
+
+
+
+
+
     }
 }

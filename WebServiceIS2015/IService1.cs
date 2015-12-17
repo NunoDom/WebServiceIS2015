@@ -26,6 +26,44 @@ namespace WebServiceIS2015
         Boolean GetXMLData(string value);
 
 
+        [OperationContract]
+        string GetCustoMedioMedicoEnfTec(DateTime dataInicio, DateTime dataFim);
+
+        //número de funcionários;
+        [OperationContract]
+        string GetNumeroFuncionarios(DateTime dataInicio, DateTime dataFim);
+
+        //número de médicos, enfermeiros e técnicos;
+        [OperationContract]
+        string GetNumeroMedicosEnfermeirosTecnico(DateTime dataInicio, DateTime dataFim);
+
+        //percentagem dos custos com medicamentos face à despesa total;
+        [OperationContract]
+        string GetPercentagemCustosMedicamentosDespesaTotal(DateTime dataInicio, DateTime dataFim);
+
+        //percentagem dos custos com utentes face à despesa total;
+        [OperationContract]
+        string GetPercentagemCustosUtentesDespesaTotal(DateTime dataInicio, DateTime dataFim);
+
+        //número de consultas, internamentos e urgências em hospitais;
+        [OperationContract]
+        string GetNumeroCOnsultasInternamentosUrgencias(DateTime dataInicio, DateTime dataFim);
+
+        //percentagem de consultas, internamentos e urgências em centros de saúde e extensões face ao total de ocorrências;
+        [OperationContract]
+        string GetPercentagemConsultasIternamentosUrgenciasCentrosSaudeExtencoes(DateTime dataInicio, DateTime dataFim);
+
+        //média do número de camas disponíveis nos hospitais;
+        [OperationContract]
+        string GetMediaCamasHospital(DateTime dataInicio, DateTime dataFim);
+
+        // rácio entre o número de funcionários e número de estabelecimentos.
+        [OperationContract]
+        string GetRacioNumeroFuncionariosNumeroEstabelecimentos(DateTime dataInicio, DateTime dataFim);
+
+
+
+
 
 
         // TODO: Add your service operations here
