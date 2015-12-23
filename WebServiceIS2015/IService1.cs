@@ -45,7 +45,7 @@ namespace WebServiceIS2015
         bool IsAdmin(string token);
 
 
-        [WebInvoke(Method = "GET", UriTemplate = "/test?nome={name}")]
+        [WebInvoke(Method = "POST", UriTemplate = "/test?nome={name}")]
         [OperationContract]
         string TestLigacao(string name);
 
