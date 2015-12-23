@@ -44,7 +44,7 @@ namespace WebServiceIS2015
 
 
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/test")]
+        [WebInvoke(Method = "GET", UriTemplate = "/test")]
         public string testLigacao(string a);
 
         // custo médio de um funcionário;
