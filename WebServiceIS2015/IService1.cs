@@ -60,9 +60,16 @@ namespace WebServiceIS2015
 
 
 
+
+
         // custo médio de um funcionário;
-        [WebInvoke(Method = "GET", UriTemplate = "/Funcionarios?dataInicio={dataInicio}&dataFim={dataFim}")]
+        [WebInvoke(Method = "GET", UriTemplate = "/Fs?dataInicio={dataInicio}&dataFim={dataFim}")]
+        [OperationContract]
         string GetCustoMedioFuncionario(String dataInicio, String dataFim);
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GeNumeroFuncionarios?dataInicio={dataInicio}&dataFim={dataFim}")]
+        [OperationContract]
+        string GetNumeroFuncionarios(DateTime dataInicio, DateTime dataFim);
 
 
         // TODO: Add your service operations here

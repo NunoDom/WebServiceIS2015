@@ -50,6 +50,9 @@ namespace WebServiceIS2015
             return string.Format("You entered: {0}", value);
         }
 
+
+
+
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
             if (composite == null)
@@ -232,5 +235,35 @@ namespace WebServiceIS2015
            
             return null;
         }
+
+
+        public string GetNumeroFuncionarios(DateTime dataInicio, DateTime dataFim)
+        {
+            if (xmlFile != null)
+            {
+                XmlNodeList nodeMedicos = xmlFile.SelectNodes("//PessoalAoServiço/Médicos/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
+                XmlNodeList nodeTecnicosDeDiagonostico = xmlFile.SelectNodes("//PessoalAoServiço/Técnicosdediagnósticoeterapêutica/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
+                XmlNodeList nodeEnfermeiros = xmlFile.SelectNodes("//PessoalAoServiço/Enfermeiros/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
+                XmlNodeList nodePessoaldeEnfermagem = xmlFile.SelectNodes("//PessoalAoServiço/Pessoaldeenfermagem/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
+
+                int x1 = nodeMedicos.Count;
+                StringBuilder sb = new StringBuilder();
+
+                for (int i = 0; i < nodeMedicos.Count; i++)
+                {
+                    // sb.Append(nodeMedicos[i].InnerText.ToString());
+                }
+                sb.AppendLine("Numero de Medicos: " + nodeMedicos[0].InnerText);
+                sb.AppendLine("Numero de Tecnico de Diagonostico: " + nodeTecnicosDeDiagonostico[0].InnerText);
+                sb.AppendLine("Numero de Enfermeiros: " + nodeEnfermeiros[0].InnerText);
+                sb.AppendLine("Numero de Pessoal de Enfermagem: " + nodePessoaldeEnfermagem[0].InnerText);
+                return sb.ToString();
+            }
+            else
+                return "Numoro de Funcionarios : " + "";
+
+        }
+
+
     }
 }
