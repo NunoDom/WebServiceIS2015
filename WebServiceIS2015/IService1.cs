@@ -25,6 +25,63 @@ namespace WebServiceIS2015
         [OperationContract]
         Boolean GetXMLData(string value);
 
+        // AUTHENTICATION
+        [WebInvoke(Method = "POST", UriTemplate = "/signup?token={token}")]
+        [OperationContract]
+        void SignUp(User user, string token); // admin only
+        [WebInvoke(Method = "POST", UriTemplate = "/login?username={username}&password={password}")]
+        [OperationContract]
+        string LogIn(string username, string password);
+        [WebInvoke(Method = "POST", UriTemplate = "/logout")]
+        [OperationContract]
+        void LogOut(string token);
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/isadmin?token={token}")]
+        bool IsAdmin(string token);
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/isloggedin?token={token}")]
+        bool IsLoggedIn(string token);
+
+        // custo médio de um funcionário;
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/Funcionarios?dataInicio={dataInicio}&dataFim={dataFim}")]
+        string GetCustoMedioFuncionario(String dataInicio, String dataFim);
+
+       // custo médio de um médico, enfermeiros e técnicos;
+        [OperationContract]
+        string GetCustoMedioMedicoEnfTec(DateTime dataInicio, DateTime dataFim);
+
+        //número de funcionários;
+        //   [OperationContract]
+        //   string GetNumeroF  uncionarios(DateTime dataInicio, DateTime dataFim);
+
+        //número de médicos, enfermeiros e técnicos;
+        //    [OperationContract]
+        //    string GetNumeroMedicosEnfermeirosTecnico(DateTime dataInicio, DateTime dataFim);
+
+        //percentagem dos custos com medicamentos face à despesa total;
+        //    [OperationContract]
+        //     string GetPercentagemCustosMedicamentosDespesaTotal(DateTime dataInicio, DateTime dataFim);
+
+        //percentagem dos custos com utentes face à despesa total;
+        //      [OperationContract]
+        //     string GetPercentagemCustosUtentesDespesaTotal(DateTime dataInicio, DateTime dataFim);
+
+        //número de consultas, internamentos e urgências em hospitais;
+        //      [OperationContract]
+        //      string GetNumeroCOnsultasInternamentosUrgencias(DateTime dataInicio, DateTime dataFim);
+
+        //percentagem de consultas, internamentos e urgências em centros de saúde e extensões face ao total de ocorrências;
+        //     [OperationContract]
+        //      string GetPercentagemConsultasIternamentosUrgenciasCentrosSaudeExtencoes(DateTime dataInicio, DateTime dataFim);
+
+        //média do número de camas disponíveis nos hospitais;
+        //     [OperationContract]
+        //      string GetMediaCamasHospital(DateTime dataInicio, DateTime dataFim);
+
+        // rácio entre o número de funcionários e número de estabelecimentos.
+        //     [OperationContract]
+        //     string GetRacioNumeroFuncionariosNumeroEstabelecimentos(DateTime dataInicio, DateTime dataFim);
 
 
 
@@ -33,6 +90,39 @@ namespace WebServiceIS2015
 
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
+
+    [DataContract]
+    public class User
+    {
+        private string username;
+        private string password;
+        private bool admin;
+        public User(string username, string password, bool admin)
+        {
+            this.admin = admin;
+            this.username = username;
+            this.password = password;
+        }
+        [DataMember]
+        public bool Admin
+        {
+            get { return admin; }
+            set { admin = value; }
+        }
+        [DataMember]
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
+        [DataMember]
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
+    }
+    
     [DataContract]
     public class CompositeType
     {
