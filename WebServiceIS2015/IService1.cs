@@ -20,7 +20,7 @@ namespace WebServiceIS2015
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         [OperationContract]
-        Boolean ReceiveData(string value);
+        string ReceiveData(string value);
 
         [OperationContract]
         Boolean GetXMLData(string value);
