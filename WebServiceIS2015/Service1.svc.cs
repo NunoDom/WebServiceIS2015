@@ -196,9 +196,8 @@ namespace WebServiceIS2015
         }
 
         public String GetCustoMedioMedicoEnfTec(DateTime dataInicio, DateTime dataFim) {
-
+           
             return null;
-        } 
-
+        }
     }
 }
