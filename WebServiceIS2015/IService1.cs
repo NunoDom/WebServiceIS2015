@@ -29,26 +29,38 @@ namespace WebServiceIS2015
         [WebInvoke(Method = "POST", UriTemplate = "/signup?token={token}")]
         [OperationContract]
         void SignUp(User user, string token); // admin only
+
+
         [WebInvoke(Method = "POST", UriTemplate = "/login?username={username}&password={password}")]
         [OperationContract]
         string LogIn(string username, string password);
+
+
         [WebInvoke(Method = "POST", UriTemplate = "/logout")]
         [OperationContract]
         void LogOut(string token);
-        [OperationContract]
+
         [WebInvoke(Method = "GET", UriTemplate = "/isadmin?token={token}")]
+        [OperationContract]        
         bool IsAdmin(string token);
+
+
+        [WebInvoke(Method = "GET", UriTemplate = "/test?nome={name}")]
         [OperationContract]
+        string testLigacao(string name);
+
+        
+
         [WebInvoke(Method = "GET", UriTemplate = "/isloggedin?token={token}")]
+        [OperationContract]
         bool IsLoggedIn(string token);
 
 
-        [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "/test")]
-        public string testLigacao(string a);
+
+
+
 
         // custo médio de um funcionário;
-        [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "/Funcionarios?dataInicio={dataInicio}&dataFim={dataFim}")]
         string GetCustoMedioFuncionario(String dataInicio, String dataFim);
 
