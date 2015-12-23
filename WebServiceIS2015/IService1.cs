@@ -42,6 +42,11 @@ namespace WebServiceIS2015
         [WebInvoke(Method = "GET", UriTemplate = "/isloggedin?token={token}")]
         bool IsLoggedIn(string token);
 
+
+        [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "/test")]
+        public string testLigacao(string a);
+
         // custo médio de um funcionário;
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "/Funcionarios?dataInicio={dataInicio}&dataFim={dataFim}")]

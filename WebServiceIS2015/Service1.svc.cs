@@ -30,7 +30,15 @@ namespace WebServiceIS2015
             //FILEPATH = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "bookstore.xml");
         }
 
+        public string testLigacao(string a)
+        {
+            if (a.Equals("Nuno"))
+            {
+                return "Certo";
+            }else
+                return "ERRADO";
 
+        }
 
 
         public string GetData(int value)
