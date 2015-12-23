@@ -47,7 +47,7 @@ namespace WebServiceIS2015
 
         [WebInvoke(Method = "GET", UriTemplate = "/test?nome={name}")]
         [OperationContract]
-        string testLigacao(string name);
+        string TestLigacao(string name);
 
         
 

@@ -31,7 +31,7 @@ namespace WebServiceIS2015
         }
 
 
-        public string testLigacao(string name)
+        public string TestLigacao(string name)
         {
             if (name.Equals("Nuno"))
             {
