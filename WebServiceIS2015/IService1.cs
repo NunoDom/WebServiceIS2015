@@ -110,7 +110,7 @@ namespace WebServiceIS2015
 
         [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroFuncionarios?dataInicio={dataInicio}&dataFim={dataFim}")]
         [OperationContract]
-        List<Resultado> GetNumeroFuncionarios(DateTime dataInicio, DateTime dataFim);
+        List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim);
 
 
         // TODO: Add your service operations here

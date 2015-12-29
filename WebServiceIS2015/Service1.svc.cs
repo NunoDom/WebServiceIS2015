@@ -221,16 +221,16 @@ namespace WebServiceIS2015
         }
 
 
-        public List<Resultado> GetNumeroFuncionarios(DateTime dataInicio, DateTime dataFim)
+        public List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim)
         {
             List<Resultado> resultados = new List<Resultado>();
 
             if (xmlFile != null)
             {
-                XmlNodeList nodeMedicos = xmlFile.SelectNodes("//PessoalAoServiço/Médicos/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
-                XmlNodeList nodeTecnicosDeDiagonostico = xmlFile.SelectNodes("//PessoalAoServiço/Técnicosdediagnósticoeterapêutica/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
-                XmlNodeList nodeEnfermeiros = xmlFile.SelectNodes("//PessoalAoServiço/Enfermeiros/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
-                XmlNodeList nodePessoaldeEnfermagem = xmlFile.SelectNodes("//PessoalAoServiço/Pessoaldeenfermagem/Anos/Ano[@ano>='" + dataInicio.Year + "'and @ano<='" + dataFim.Year + "']");
+                XmlNodeList nodeMedicos = xmlFile.SelectNodes("//PessoalAoServiço/Médicos/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+                XmlNodeList nodeTecnicosDeDiagonostico = xmlFile.SelectNodes("//PessoalAoServiço/Técnicosdediagnósticoeterapêutica/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+                XmlNodeList nodeEnfermeiros = xmlFile.SelectNodes("//PessoalAoServiço/Enfermeiros/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+                XmlNodeList nodePessoaldeEnfermagem = xmlFile.SelectNodes("//PessoalAoServiço/Pessoaldeenfermagem/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
 
 
                 XmlNode nodeAno = nodeMedicos[0];
