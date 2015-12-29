@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Web.Hosting;
 using System.Xml;
 
 namespace WebServiceIS2015
@@ -29,7 +31,15 @@ namespace WebServiceIS2015
             this.tokens = new Dictionary<string, Token>();
             // default administrator
             users.Add("admin", new User("admin", "admin", true));
-            //FILEPATH = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "bookstore.xml");
+            FILEPATH = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "XMLFILE.xml");
+            loadXML();
+            
+
+        }
+
+        private void loadXML()
+        {
+            xmlFile.Load(FILEPATH);
         }
 
 
@@ -197,7 +207,10 @@ namespace WebServiceIS2015
         {
             try
             {
-                xmlFile.LoadXml(value);
+                XmlDocument novo = new XmlDocument();
+                novo.LoadXml(value);
+                novo.Save(FILEPATH);
+                loadXML();
                 return true;
             }
             catch (Exception)
@@ -221,8 +234,9 @@ namespace WebServiceIS2015
         }
 
 
-        public List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim)
+        public List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim, string token)
         {
+            checkAuthentication(token, false);
             List<Resultado> resultados = new List<Resultado>();
 
             if (xmlFile != null)
@@ -243,7 +257,7 @@ namespace WebServiceIS2015
                 {
                     Resultado resultado = new Resultado();
                     resultado.Ano = Int32.Parse(nodeMedicos[i].Attributes[0].Value);
-                    resultado.Tipo = "Total";
+                    resultado.Tipo = "Total Funcionarios";
                     resultado.Valor = Int32.Parse(nodeMedicos[i].InnerText)+Int32.Parse(nodePessoaldeEnfermagem[i].InnerText)+Int32.Parse(nodeTecnicosDeDiagonostico[i].InnerText)+Int32.Parse(nodeEnfermeiros[i].InnerText);
 
                     resultados.Add(resultado);

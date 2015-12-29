@@ -1,0 +1,861 @@
+<sns>
+  <Camasnoshospitaisgeraispor100milhab.>
+    <Anos>
+      <Ano ano="1985">0</Ano>
+      <Ano ano="1986">0</Ano>
+      <Ano ano="1987">0</Ano>
+      <Ano ano="1988">0</Ano>
+      <Ano ano="1989">0</Ano>
+      <Ano ano="1990">0</Ano>
+      <Ano ano="1991">0</Ano>
+      <Ano ano="1992">0</Ano>
+      <Ano ano="1993">0</Ano>
+      <Ano ano="1994">232,3</Ano>
+      <Ano ano="1995">232,8</Ano>
+      <Ano ano="1996">233,1</Ano>
+      <Ano ano="1997">230,1</Ano>
+      <Ano ano="1998">228,1</Ano>
+      <Ano ano="1999">232,1</Ano>
+      <Ano ano="2000">233</Ano>
+      <Ano ano="2001">229,5</Ano>
+      <Ano ano="2002">226,5</Ano>
+      <Ano ano="2003">226,6</Ano>
+      <Ano ano="2004">220,8</Ano>
+      <Ano ano="2005">223,4</Ano>
+      <Ano ano="2006">219,2</Ano>
+      <Ano ano="2007">218</Ano>
+      <Ano ano="2008">214,9</Ano>
+      <Ano ano="2009">213,2</Ano>
+      <Ano ano="2010">208,2</Ano>
+      <Ano ano="2011">205,1</Ano>
+      <Ano ano="2012">215,2</Ano>
+      <Ano ano="2013">208,6</Ano>
+    </Anos>
+  </Camasnoshospitaisgeraispor100milhab.>
+  <Camasnoshospitaisespecializadospor100milhab.>
+    <Anos>
+      <Ano ano="1985">0</Ano>
+      <Ano ano="1986">0</Ano>
+      <Ano ano="1987">0</Ano>
+      <Ano ano="1988">0</Ano>
+      <Ano ano="1989">0</Ano>
+      <Ano ano="1990">0</Ano>
+      <Ano ano="1991">0</Ano>
+      <Ano ano="1992">0</Ano>
+      <Ano ano="1993">0</Ano>
+      <Ano ano="1994">232,3</Ano>
+      <Ano ano="1995">232,8</Ano>
+      <Ano ano="1996">233,1</Ano>
+      <Ano ano="1997">230,1</Ano>
+      <Ano ano="1998">228,1</Ano>
+      <Ano ano="1999">232,1</Ano>
+      <Ano ano="2000">233</Ano>
+      <Ano ano="2001">229,5</Ano>
+      <Ano ano="2002">226,5</Ano>
+      <Ano ano="2003">226,6</Ano>
+      <Ano ano="2004">220,8</Ano>
+      <Ano ano="2005">223,4</Ano>
+      <Ano ano="2006">219,2</Ano>
+      <Ano ano="2007">218</Ano>
+      <Ano ano="2008">214,9</Ano>
+      <Ano ano="2009">213,2</Ano>
+      <Ano ano="2010">208,2</Ano>
+      <Ano ano="2011">205,1</Ano>
+      <Ano ano="2012">215,2</Ano>
+      <Ano ano="2013">208,6</Ano>
+    </Anos>
+  </Camasnoshospitaisespecializadospor100milhab.>
+  <Camasnoscentrosdesaúdepor100milhab.>
+    <Anos>
+      <Ano ano="1985">0</Ano>
+      <Ano ano="1986">0</Ano>
+      <Ano ano="1987">0</Ano>
+      <Ano ano="1988">0</Ano>
+      <Ano ano="1989">0</Ano>
+      <Ano ano="1990">0</Ano>
+      <Ano ano="1991">0</Ano>
+      <Ano ano="1992">0</Ano>
+      <Ano ano="1993">0</Ano>
+      <Ano ano="1994">232,3</Ano>
+      <Ano ano="1995">232,8</Ano>
+      <Ano ano="1996">233,1</Ano>
+      <Ano ano="1997">230,1</Ano>
+      <Ano ano="1998">228,1</Ano>
+      <Ano ano="1999">232,1</Ano>
+      <Ano ano="2000">233</Ano>
+      <Ano ano="2001">229,5</Ano>
+      <Ano ano="2002">226,5</Ano>
+      <Ano ano="2003">226,6</Ano>
+      <Ano ano="2004">220,8</Ano>
+      <Ano ano="2005">223,4</Ano>
+      <Ano ano="2006">219,2</Ano>
+      <Ano ano="2007">218</Ano>
+      <Ano ano="2008">214,9</Ano>
+      <Ano ano="2009">213,2</Ano>
+      <Ano ano="2010">208,2</Ano>
+      <Ano ano="2011">205,1</Ano>
+      <Ano ano="2012">215,2</Ano>
+      <Ano ano="2013">208,6</Ano>
+    </Anos>
+  </Camasnoscentrosdesaúdepor100milhab.>
+  <Consultas>
+    <Total>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">29534</Ano>
+        <Ano ano="1995">30149</Ano>
+        <Ano ano="1996">30118</Ano>
+        <Ano ano="1997">31279</Ano>
+        <Ano ano="1998">31954</Ano>
+        <Ano ano="1999">32758</Ano>
+        <Ano ano="2000">33218</Ano>
+        <Ano ano="2001">34255</Ano>
+        <Ano ano="2002">35629</Ano>
+        <Ano ano="2003">35898</Ano>
+        <Ano ano="2004">36469</Ano>
+        <Ano ano="2005">37015</Ano>
+        <Ano ano="2006">37457</Ano>
+        <Ano ano="2007">38712</Ano>
+        <Ano ano="2008">41220</Ano>
+        <Ano ano="2009">37792</Ano>
+        <Ano ano="2010">38330</Ano>
+        <Ano ano="2011">38394</Ano>
+        <Ano ano="2012">36933</Ano>
+        <Ano ano="2013">0</Ano>
+      </Anos>
+    </Total>
+    <Hospitais>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">29534</Ano>
+        <Ano ano="1995">30149</Ano>
+        <Ano ano="1996">30118</Ano>
+        <Ano ano="1997">31279</Ano>
+        <Ano ano="1998">31954</Ano>
+        <Ano ano="1999">32758</Ano>
+        <Ano ano="2000">33218</Ano>
+        <Ano ano="2001">34255</Ano>
+        <Ano ano="2002">35629</Ano>
+        <Ano ano="2003">35898</Ano>
+        <Ano ano="2004">36469</Ano>
+        <Ano ano="2005">37015</Ano>
+        <Ano ano="2006">37457</Ano>
+        <Ano ano="2007">38712</Ano>
+        <Ano ano="2008">41220</Ano>
+        <Ano ano="2009">37792</Ano>
+        <Ano ano="2010">38330</Ano>
+        <Ano ano="2011">38394</Ano>
+        <Ano ano="2012">36933</Ano>
+        <Ano ano="2013">0</Ano>
+      </Anos>
+    </Hospitais>
+    <Centrosdesaúde>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">29534</Ano>
+        <Ano ano="1995">30149</Ano>
+        <Ano ano="1996">30118</Ano>
+        <Ano ano="1997">31279</Ano>
+        <Ano ano="1998">31954</Ano>
+        <Ano ano="1999">32758</Ano>
+        <Ano ano="2000">33218</Ano>
+        <Ano ano="2001">34255</Ano>
+        <Ano ano="2002">35629</Ano>
+        <Ano ano="2003">35898</Ano>
+        <Ano ano="2004">36469</Ano>
+        <Ano ano="2005">37015</Ano>
+        <Ano ano="2006">37457</Ano>
+        <Ano ano="2007">38712</Ano>
+        <Ano ano="2008">41220</Ano>
+        <Ano ano="2009">37792</Ano>
+        <Ano ano="2010">38330</Ano>
+        <Ano ano="2011">38394</Ano>
+        <Ano ano="2012">36933</Ano>
+        <Ano ano="2013">0</Ano>
+      </Anos>
+    </Centrosdesaúde>
+  </Consultas>
+  <Internamentos>
+    <Total>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">29534</Ano>
+        <Ano ano="1995">30149</Ano>
+        <Ano ano="1996">30118</Ano>
+        <Ano ano="1997">31279</Ano>
+        <Ano ano="1998">31954</Ano>
+        <Ano ano="1999">32758</Ano>
+        <Ano ano="2000">33218</Ano>
+        <Ano ano="2001">34255</Ano>
+        <Ano ano="2002">35629</Ano>
+        <Ano ano="2003">35898</Ano>
+        <Ano ano="2004">36469</Ano>
+        <Ano ano="2005">37015</Ano>
+        <Ano ano="2006">37457</Ano>
+        <Ano ano="2007">38712</Ano>
+        <Ano ano="2008">41220</Ano>
+        <Ano ano="2009">37792</Ano>
+        <Ano ano="2010">38330</Ano>
+        <Ano ano="2011">38394</Ano>
+        <Ano ano="2012">36933</Ano>
+        <Ano ano="2013">0</Ano>
+      </Anos>
+    </Total>
+    <Hospitais>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">29534</Ano>
+        <Ano ano="1995">30149</Ano>
+        <Ano ano="1996">30118</Ano>
+        <Ano ano="1997">31279</Ano>
+        <Ano ano="1998">31954</Ano>
+        <Ano ano="1999">32758</Ano>
+        <Ano ano="2000">33218</Ano>
+        <Ano ano="2001">34255</Ano>
+        <Ano ano="2002">35629</Ano>
+        <Ano ano="2003">35898</Ano>
+        <Ano ano="2004">36469</Ano>
+        <Ano ano="2005">37015</Ano>
+        <Ano ano="2006">37457</Ano>
+        <Ano ano="2007">38712</Ano>
+        <Ano ano="2008">41220</Ano>
+        <Ano ano="2009">37792</Ano>
+        <Ano ano="2010">38330</Ano>
+        <Ano ano="2011">38394</Ano>
+        <Ano ano="2012">36933</Ano>
+        <Ano ano="2013">0</Ano>
+      </Anos>
+    </Hospitais>
+    <Centrosdesaúde>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">29534</Ano>
+        <Ano ano="1995">30149</Ano>
+        <Ano ano="1996">30118</Ano>
+        <Ano ano="1997">31279</Ano>
+        <Ano ano="1998">31954</Ano>
+        <Ano ano="1999">32758</Ano>
+        <Ano ano="2000">33218</Ano>
+        <Ano ano="2001">34255</Ano>
+        <Ano ano="2002">35629</Ano>
+        <Ano ano="2003">35898</Ano>
+        <Ano ano="2004">36469</Ano>
+        <Ano ano="2005">37015</Ano>
+        <Ano ano="2006">37457</Ano>
+        <Ano ano="2007">38712</Ano>
+        <Ano ano="2008">41220</Ano>
+        <Ano ano="2009">37792</Ano>
+        <Ano ano="2010">38330</Ano>
+        <Ano ano="2011">38394</Ano>
+        <Ano ano="2012">36933</Ano>
+        <Ano ano="2013">0</Ano>
+      </Anos>
+    </Centrosdesaúde>
+  </Internamentos>
+  <Urgências>
+    <Total>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">29534</Ano>
+        <Ano ano="1995">30149</Ano>
+        <Ano ano="1996">30118</Ano>
+        <Ano ano="1997">31279</Ano>
+        <Ano ano="1998">31954</Ano>
+        <Ano ano="1999">32758</Ano>
+        <Ano ano="2000">33218</Ano>
+        <Ano ano="2001">34255</Ano>
+        <Ano ano="2002">35629</Ano>
+        <Ano ano="2003">35898</Ano>
+        <Ano ano="2004">36469</Ano>
+        <Ano ano="2005">37015</Ano>
+        <Ano ano="2006">37457</Ano>
+        <Ano ano="2007">38712</Ano>
+        <Ano ano="2008">41220</Ano>
+        <Ano ano="2009">37792</Ano>
+        <Ano ano="2010">38330</Ano>
+        <Ano ano="2011">38394</Ano>
+        <Ano ano="2012">36933</Ano>
+        <Ano ano="2013">0</Ano>
+      </Anos>
+    </Total>
+    <Hospitais>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">29534</Ano>
+        <Ano ano="1995">30149</Ano>
+        <Ano ano="1996">30118</Ano>
+        <Ano ano="1997">31279</Ano>
+        <Ano ano="1998">31954</Ano>
+        <Ano ano="1999">32758</Ano>
+        <Ano ano="2000">33218</Ano>
+        <Ano ano="2001">34255</Ano>
+        <Ano ano="2002">35629</Ano>
+        <Ano ano="2003">35898</Ano>
+        <Ano ano="2004">36469</Ano>
+        <Ano ano="2005">37015</Ano>
+        <Ano ano="2006">37457</Ano>
+        <Ano ano="2007">38712</Ano>
+        <Ano ano="2008">41220</Ano>
+        <Ano ano="2009">37792</Ano>
+        <Ano ano="2010">38330</Ano>
+        <Ano ano="2011">38394</Ano>
+        <Ano ano="2012">36933</Ano>
+        <Ano ano="2013">0</Ano>
+      </Anos>
+    </Hospitais>
+    <Centrosdesaúde>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">29534</Ano>
+        <Ano ano="1995">30149</Ano>
+        <Ano ano="1996">30118</Ano>
+        <Ano ano="1997">31279</Ano>
+        <Ano ano="1998">31954</Ano>
+        <Ano ano="1999">32758</Ano>
+        <Ano ano="2000">33218</Ano>
+        <Ano ano="2001">34255</Ano>
+        <Ano ano="2002">35629</Ano>
+        <Ano ano="2003">35898</Ano>
+        <Ano ano="2004">36469</Ano>
+        <Ano ano="2005">37015</Ano>
+        <Ano ano="2006">37457</Ano>
+        <Ano ano="2007">38712</Ano>
+        <Ano ano="2008">41220</Ano>
+        <Ano ano="2009">37792</Ano>
+        <Ano ano="2010">38330</Ano>
+        <Ano ano="2011">38394</Ano>
+        <Ano ano="2012">36933</Ano>
+        <Ano ano="2013">0</Ano>
+      </Anos>
+    </Centrosdesaúde>
+  </Urgências>
+  <DespesadoSNS>
+    <Total>
+      <Anos>
+        <Ano ano="1980">219,1</Ano>
+        <Ano ano="1981">288,1</Ano>
+        <Ano ano="1982">321,7</Ano>
+        <Ano ano="1983">401,1</Ano>
+        <Ano ano="1984">494,2</Ano>
+        <Ano ano="1985">648,3</Ano>
+        <Ano ano="1986">793,4</Ano>
+        <Ano ano="1987">954</Ano>
+        <Ano ano="1988">1163,3</Ano>
+        <Ano ano="1989">1362,9</Ano>
+        <Ano ano="1990">1721,6</Ano>
+        <Ano ano="1991">2208,2</Ano>
+        <Ano ano="1992">2564,2</Ano>
+        <Ano ano="1993">2883,7</Ano>
+        <Ano ano="1994">3100,9</Ano>
+        <Ano ano="1995">3397,9</Ano>
+        <Ano ano="1996">3777,4</Ano>
+        <Ano ano="1997">4208,6</Ano>
+        <Ano ano="1998">4704,4</Ano>
+        <Ano ano="1999">5340,6</Ano>
+        <Ano ano="2000">5977,7</Ano>
+        <Ano ano="2001">6585,5</Ano>
+        <Ano ano="2002">7067,2</Ano>
+        <Ano ano="2003">7704,7</Ano>
+        <Ano ano="2004">8554,3</Ano>
+        <Ano ano="2005">9267,4</Ano>
+        <Ano ano="2006">9018,8</Ano>
+        <Ano ano="2007">9111,8</Ano>
+        <Ano ano="2008">9296,7</Ano>
+        <Ano ano="2009">9852,4</Ano>
+        <Ano ano="2010">10271,2</Ano>
+        <Ano ano="2011">9590,7</Ano>
+        <Ano ano="2012">8947,7</Ano>
+        <Ano ano="2013">8906,2</Ano>
+      </Anos>
+    </Total>
+    <Compessoal>
+      <Anos>
+        <Ano ano="1980">219,1</Ano>
+        <Ano ano="1981">288,1</Ano>
+        <Ano ano="1982">321,7</Ano>
+        <Ano ano="1983">401,1</Ano>
+        <Ano ano="1984">494,2</Ano>
+        <Ano ano="1985">648,3</Ano>
+        <Ano ano="1986">793,4</Ano>
+        <Ano ano="1987">954</Ano>
+        <Ano ano="1988">1163,3</Ano>
+        <Ano ano="1989">1362,9</Ano>
+        <Ano ano="1990">1721,6</Ano>
+        <Ano ano="1991">2208,2</Ano>
+        <Ano ano="1992">2564,2</Ano>
+        <Ano ano="1993">2883,7</Ano>
+        <Ano ano="1994">3100,9</Ano>
+        <Ano ano="1995">3397,9</Ano>
+        <Ano ano="1996">3777,4</Ano>
+        <Ano ano="1997">4208,6</Ano>
+        <Ano ano="1998">4704,4</Ano>
+        <Ano ano="1999">5340,6</Ano>
+        <Ano ano="2000">5977,7</Ano>
+        <Ano ano="2001">6585,5</Ano>
+        <Ano ano="2002">7067,2</Ano>
+        <Ano ano="2003">7704,7</Ano>
+        <Ano ano="2004">8554,3</Ano>
+        <Ano ano="2005">9267,4</Ano>
+        <Ano ano="2006">9018,8</Ano>
+        <Ano ano="2007">9111,8</Ano>
+        <Ano ano="2008">9296,7</Ano>
+        <Ano ano="2009">9852,4</Ano>
+        <Ano ano="2010">10271,2</Ano>
+        <Ano ano="2011">9590,7</Ano>
+        <Ano ano="2012">8947,7</Ano>
+        <Ano ano="2013">8906,2</Ano>
+      </Anos>
+    </Compessoal>
+    <DespesadoSNSporhab.>
+      <Anos>
+        <Ano ano="1982">34,2</Ano>
+        <Ano ano="1983">42,4</Ano>
+        <Ano ano="1984">52,1</Ano>
+        <Ano ano="1985">68,1</Ano>
+        <Ano ano="1986">83,3</Ano>
+        <Ano ano="1987">100,2</Ano>
+        <Ano ano="1988">122,2</Ano>
+        <Ano ano="1989">143,4</Ano>
+        <Ano ano="1990">181,4</Ano>
+        <Ano ano="1991">233,3</Ano>
+        <Ano ano="1992">271,1</Ano>
+        <Ano ano="1993">304,4</Ano>
+        <Ano ano="1994">326,3</Ano>
+        <Ano ano="1995">356,1</Ano>
+        <Ano ano="1996">394,3</Ano>
+        <Ano ano="1997">437,2</Ano>
+        <Ano ano="1998">486,1</Ano>
+        <Ano ano="1999">548,6</Ano>
+        <Ano ano="2000">609,6</Ano>
+        <Ano ano="2001">666,9</Ano>
+        <Ano ano="2002">711,9</Ano>
+        <Ano ano="2003">773,4</Ano>
+        <Ano ano="2004">856,8</Ano>
+        <Ano ano="2005">926,6</Ano>
+        <Ano ano="2006">900,3</Ano>
+        <Ano ano="2007">908</Ano>
+        <Ano ano="2008">925,3</Ano>
+        <Ano ano="2009">979,8</Ano>
+        <Ano ano="2010">1021,1</Ano>
+        <Ano ano="2011">954,8</Ano>
+        <Ano ano="2012">894,4</Ano>
+        <Ano ano="2013">895,3</Ano>
+      </Anos>
+    </DespesadoSNSporhab.>
+  </DespesadoSNS>
+  <Encargoscommedicamentos>
+    <DoSNS>
+      <Anos>
+        <Ano ano="1990">305,9</Ano>
+        <Ano ano="1991">382,8</Ano>
+        <Ano ano="1992">433,1</Ano>
+        <Ano ano="1993">488,4</Ano>
+        <Ano ano="1994">533</Ano>
+        <Ano ano="1995">609,8</Ano>
+        <Ano ano="1996">697,6</Ano>
+        <Ano ano="1997">778,5</Ano>
+        <Ano ano="1998">848,1</Ano>
+        <Ano ano="1999">944,2</Ano>
+        <Ano ano="2000">1038,9</Ano>
+        <Ano ano="2001">1147</Ano>
+        <Ano ano="2002">1227,3</Ano>
+        <Ano ano="2003">1272,9</Ano>
+        <Ano ano="2004">1394,1</Ano>
+        <Ano ano="2005">1446,2</Ano>
+        <Ano ano="2006">1422,9</Ano>
+        <Ano ano="2007">1398</Ano>
+        <Ano ano="2008">1467,4</Ano>
+        <Ano ano="2009">1559</Ano>
+        <Ano ano="2010">1640,7</Ano>
+        <Ano ano="2011">1326,2</Ano>
+        <Ano ano="2012">1173,2</Ano>
+        <Ano ano="2013">1160,2</Ano>
+      </Anos>
+    </DoSNS>
+    <Doutente>
+      <Anos>
+        <Ano ano="1990">305,9</Ano>
+        <Ano ano="1991">382,8</Ano>
+        <Ano ano="1992">433,1</Ano>
+        <Ano ano="1993">488,4</Ano>
+        <Ano ano="1994">533</Ano>
+        <Ano ano="1995">609,8</Ano>
+        <Ano ano="1996">697,6</Ano>
+        <Ano ano="1997">778,5</Ano>
+        <Ano ano="1998">848,1</Ano>
+        <Ano ano="1999">944,2</Ano>
+        <Ano ano="2000">1038,9</Ano>
+        <Ano ano="2001">1147</Ano>
+        <Ano ano="2002">1227,3</Ano>
+        <Ano ano="2003">1272,9</Ano>
+        <Ano ano="2004">1394,1</Ano>
+        <Ano ano="2005">1446,2</Ano>
+        <Ano ano="2006">1422,9</Ano>
+        <Ano ano="2007">1398</Ano>
+        <Ano ano="2008">1467,4</Ano>
+        <Ano ano="2009">1559</Ano>
+        <Ano ano="2010">1640,7</Ano>
+        <Ano ano="2011">1326,2</Ano>
+        <Ano ano="2012">1173,2</Ano>
+        <Ano ano="2013">1160,2</Ano>
+      </Anos>
+    </Doutente>
+  </Encargoscommedicamentos>
+  <Estabelecimentosdesaúde>
+    <Hospitaisgerais>
+      <Anos>
+        <Ano ano="1985">70</Ano>
+        <Ano ano="1990">81</Ano>
+        <Ano ano="1991">80</Ano>
+        <Ano ano="1992">79</Ano>
+        <Ano ano="1993">78</Ano>
+        <Ano ano="1994">78</Ano>
+        <Ano ano="1995">79</Ano>
+        <Ano ano="1996">79</Ano>
+        <Ano ano="1997">79</Ano>
+        <Ano ano="1998">79</Ano>
+        <Ano ano="1999">78</Ano>
+        <Ano ano="2000">79</Ano>
+        <Ano ano="2001">78</Ano>
+        <Ano ano="2002">77</Ano>
+        <Ano ano="2003">74</Ano>
+        <Ano ano="2004">73</Ano>
+        <Ano ano="2005">70</Ano>
+        <Ano ano="2006">65</Ano>
+        <Ano ano="2007">59</Ano>
+        <Ano ano="2008">57</Ano>
+        <Ano ano="2009">52</Ano>
+        <Ano ano="2010">80</Ano>
+        <Ano ano="2011">80</Ano>
+        <Ano ano="2012">82</Ano>
+        <Ano ano="2013">82</Ano>
+      </Anos>
+    </Hospitaisgerais>
+    <Hospitaisespecializados>
+      <Anos>
+        <Ano ano="1985">70</Ano>
+        <Ano ano="1990">81</Ano>
+        <Ano ano="1991">80</Ano>
+        <Ano ano="1992">79</Ano>
+        <Ano ano="1993">78</Ano>
+        <Ano ano="1994">78</Ano>
+        <Ano ano="1995">79</Ano>
+        <Ano ano="1996">79</Ano>
+        <Ano ano="1997">79</Ano>
+        <Ano ano="1998">79</Ano>
+        <Ano ano="1999">78</Ano>
+        <Ano ano="2000">79</Ano>
+        <Ano ano="2001">78</Ano>
+        <Ano ano="2002">77</Ano>
+        <Ano ano="2003">74</Ano>
+        <Ano ano="2004">73</Ano>
+        <Ano ano="2005">70</Ano>
+        <Ano ano="2006">65</Ano>
+        <Ano ano="2007">59</Ano>
+        <Ano ano="2008">57</Ano>
+        <Ano ano="2009">52</Ano>
+        <Ano ano="2010">80</Ano>
+        <Ano ano="2011">80</Ano>
+        <Ano ano="2012">82</Ano>
+        <Ano ano="2013">82</Ano>
+      </Anos>
+    </Hospitaisespecializados>
+    <Centrosdesaúde>
+      <Anos>
+        <Ano ano="1985">70</Ano>
+        <Ano ano="1990">81</Ano>
+        <Ano ano="1991">80</Ano>
+        <Ano ano="1992">79</Ano>
+        <Ano ano="1993">78</Ano>
+        <Ano ano="1994">78</Ano>
+        <Ano ano="1995">79</Ano>
+        <Ano ano="1996">79</Ano>
+        <Ano ano="1997">79</Ano>
+        <Ano ano="1998">79</Ano>
+        <Ano ano="1999">78</Ano>
+        <Ano ano="2000">79</Ano>
+        <Ano ano="2001">78</Ano>
+        <Ano ano="2002">77</Ano>
+        <Ano ano="2003">74</Ano>
+        <Ano ano="2004">73</Ano>
+        <Ano ano="2005">70</Ano>
+        <Ano ano="2006">65</Ano>
+        <Ano ano="2007">59</Ano>
+        <Ano ano="2008">57</Ano>
+        <Ano ano="2009">52</Ano>
+        <Ano ano="2010">80</Ano>
+        <Ano ano="2011">80</Ano>
+        <Ano ano="2012">82</Ano>
+        <Ano ano="2013">82</Ano>
+      </Anos>
+    </Centrosdesaúde>
+    <Extensõesdecentrosdesaúde>
+      <Anos>
+        <Ano ano="1985">70</Ano>
+        <Ano ano="1990">81</Ano>
+        <Ano ano="1991">80</Ano>
+        <Ano ano="1992">79</Ano>
+        <Ano ano="1993">78</Ano>
+        <Ano ano="1994">78</Ano>
+        <Ano ano="1995">79</Ano>
+        <Ano ano="1996">79</Ano>
+        <Ano ano="1997">79</Ano>
+        <Ano ano="1998">79</Ano>
+        <Ano ano="1999">78</Ano>
+        <Ano ano="2000">79</Ano>
+        <Ano ano="2001">78</Ano>
+        <Ano ano="2002">77</Ano>
+        <Ano ano="2003">74</Ano>
+        <Ano ano="2004">73</Ano>
+        <Ano ano="2005">70</Ano>
+        <Ano ano="2006">65</Ano>
+        <Ano ano="2007">59</Ano>
+        <Ano ano="2008">57</Ano>
+        <Ano ano="2009">52</Ano>
+        <Ano ano="2010">80</Ano>
+        <Ano ano="2011">80</Ano>
+        <Ano ano="2012">82</Ano>
+        <Ano ano="2013">82</Ano>
+      </Anos>
+    </Extensõesdecentrosdesaúde>
+  </Estabelecimentosdesaúde>
+  <Lotação>
+    <Hospitaisgerais>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">22082</Ano>
+        <Ano ano="1995">22213</Ano>
+        <Ano ano="1996">22332</Ano>
+        <Ano ano="1997">22149</Ano>
+        <Ano ano="1998">22077</Ano>
+        <Ano ano="1999">22590</Ano>
+        <Ano ano="2000">22842</Ano>
+        <Ano ano="2001">22665</Ano>
+        <Ano ano="2002">22481</Ano>
+        <Ano ano="2003">22574</Ano>
+        <Ano ano="2004">22047</Ano>
+        <Ano ano="2005">22339</Ano>
+        <Ano ano="2006">21953</Ano>
+        <Ano ano="2007">21878</Ano>
+        <Ano ano="2008">21594</Ano>
+        <Ano ano="2009">21443</Ano>
+        <Ano ano="2010">20946</Ano>
+        <Ano ano="2011">20598</Ano>
+        <Ano ano="2012">21526</Ano>
+        <Ano ano="2013">20746</Ano>
+      </Anos>
+    </Hospitaisgerais>
+    <Hospitaisespecializados>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">22082</Ano>
+        <Ano ano="1995">22213</Ano>
+        <Ano ano="1996">22332</Ano>
+        <Ano ano="1997">22149</Ano>
+        <Ano ano="1998">22077</Ano>
+        <Ano ano="1999">22590</Ano>
+        <Ano ano="2000">22842</Ano>
+        <Ano ano="2001">22665</Ano>
+        <Ano ano="2002">22481</Ano>
+        <Ano ano="2003">22574</Ano>
+        <Ano ano="2004">22047</Ano>
+        <Ano ano="2005">22339</Ano>
+        <Ano ano="2006">21953</Ano>
+        <Ano ano="2007">21878</Ano>
+        <Ano ano="2008">21594</Ano>
+        <Ano ano="2009">21443</Ano>
+        <Ano ano="2010">20946</Ano>
+        <Ano ano="2011">20598</Ano>
+        <Ano ano="2012">21526</Ano>
+        <Ano ano="2013">20746</Ano>
+      </Anos>
+    </Hospitaisespecializados>
+    <Centrosdesaúdeeextensões>
+      <Anos>
+        <Ano ano="1985">0</Ano>
+        <Ano ano="1990">0</Ano>
+        <Ano ano="1991">0</Ano>
+        <Ano ano="1992">0</Ano>
+        <Ano ano="1993">0</Ano>
+        <Ano ano="1994">22082</Ano>
+        <Ano ano="1995">22213</Ano>
+        <Ano ano="1996">22332</Ano>
+        <Ano ano="1997">22149</Ano>
+        <Ano ano="1998">22077</Ano>
+        <Ano ano="1999">22590</Ano>
+        <Ano ano="2000">22842</Ano>
+        <Ano ano="2001">22665</Ano>
+        <Ano ano="2002">22481</Ano>
+        <Ano ano="2003">22574</Ano>
+        <Ano ano="2004">22047</Ano>
+        <Ano ano="2005">22339</Ano>
+        <Ano ano="2006">21953</Ano>
+        <Ano ano="2007">21878</Ano>
+        <Ano ano="2008">21594</Ano>
+        <Ano ano="2009">21443</Ano>
+        <Ano ano="2010">20946</Ano>
+        <Ano ano="2011">20598</Ano>
+        <Ano ano="2012">21526</Ano>
+        <Ano ano="2013">20746</Ano>
+      </Anos>
+    </Centrosdesaúdeeextensões>
+  </Lotação>
+  <PessoalAoServiço>
+    <Médicos>
+      <Anos>
+        <Ano ano="1985">21275</Ano>
+        <Ano ano="1990">21029</Ano>
+        <Ano ano="1991">21118</Ano>
+        <Ano ano="1992">21435</Ano>
+        <Ano ano="1993">21189</Ano>
+        <Ano ano="1994">21578</Ano>
+        <Ano ano="1995">21866</Ano>
+        <Ano ano="1996">22254</Ano>
+        <Ano ano="1997">22067</Ano>
+        <Ano ano="1998">21690</Ano>
+        <Ano ano="1999">22406</Ano>
+        <Ano ano="2000">70</Ano>
+        <Ano ano="2001">22712</Ano>
+        <Ano ano="2002">23542</Ano>
+        <Ano ano="2003">23031</Ano>
+        <Ano ano="2004">23262</Ano>
+        <Ano ano="2005">23402</Ano>
+        <Ano ano="2006">23604</Ano>
+        <Ano ano="2007">23524</Ano>
+        <Ano ano="2008">23633</Ano>
+        <Ano ano="2009">23693</Ano>
+        <Ano ano="2010">24710</Ano>
+        <Ano ano="2011">24271</Ano>
+        <Ano ano="2012">25224</Ano>
+      </Anos>
+    </Médicos>
+    <Pessoaldeenfermagem>
+      <Anos>
+        <Ano ano="1985">21275</Ano>
+        <Ano ano="1990">21029</Ano>
+        <Ano ano="1991">21118</Ano>
+        <Ano ano="1992">21435</Ano>
+        <Ano ano="1993">21189</Ano>
+        <Ano ano="1994">21578</Ano>
+        <Ano ano="1995">21866</Ano>
+        <Ano ano="1996">22254</Ano>
+        <Ano ano="1997">22067</Ano>
+        <Ano ano="1998">21690</Ano>
+        <Ano ano="1999">22406</Ano>
+        <Ano ano="2000">10</Ano>
+        <Ano ano="2001">22712</Ano>
+        <Ano ano="2002">23542</Ano>
+        <Ano ano="2003">23031</Ano>
+        <Ano ano="2004">23262</Ano>
+        <Ano ano="2005">23402</Ano>
+        <Ano ano="2006">23604</Ano>
+        <Ano ano="2007">23524</Ano>
+        <Ano ano="2008">23633</Ano>
+        <Ano ano="2009">23693</Ano>
+        <Ano ano="2010">24710</Ano>
+        <Ano ano="2011">24271</Ano>
+        <Ano ano="2012">25224</Ano>
+      </Anos>
+    </Pessoaldeenfermagem>
+    <Enfermeiros>
+      <Anos>
+        <Ano ano="1985">21275</Ano>
+        <Ano ano="1990">21029</Ano>
+        <Ano ano="1991">21118</Ano>
+        <Ano ano="1992">21435</Ano>
+        <Ano ano="1993">21189</Ano>
+        <Ano ano="1994">21578</Ano>
+        <Ano ano="1995">21866</Ano>
+        <Ano ano="1996">22254</Ano>
+        <Ano ano="1997">22067</Ano>
+        <Ano ano="1998">21690</Ano>
+        <Ano ano="1999">22406</Ano>
+        <Ano ano="2000">10</Ano>
+        <Ano ano="2001">22712</Ano>
+        <Ano ano="2002">23542</Ano>
+        <Ano ano="2003">23031</Ano>
+        <Ano ano="2004">23262</Ano>
+        <Ano ano="2005">23402</Ano>
+        <Ano ano="2006">23604</Ano>
+        <Ano ano="2007">23524</Ano>
+        <Ano ano="2008">23633</Ano>
+        <Ano ano="2009">23693</Ano>
+        <Ano ano="2010">24710</Ano>
+        <Ano ano="2011">24271</Ano>
+        <Ano ano="2012">25224</Ano>
+      </Anos>
+    </Enfermeiros>
+    <Técnicosdediagnósticoeterapêutica>
+      <Anos>
+        <Ano ano="1985">21275</Ano>
+        <Ano ano="1990">21029</Ano>
+        <Ano ano="1991">21118</Ano>
+        <Ano ano="1992">21435</Ano>
+        <Ano ano="1993">21189</Ano>
+        <Ano ano="1994">21578</Ano>
+        <Ano ano="1995">21866</Ano>
+        <Ano ano="1996">22254</Ano>
+        <Ano ano="1997">22067</Ano>
+        <Ano ano="1998">21690</Ano>
+        <Ano ano="1999">22406</Ano>
+        <Ano ano="2000">10</Ano>
+        <Ano ano="2001">22712</Ano>
+        <Ano ano="2002">23542</Ano>
+        <Ano ano="2003">23031</Ano>
+        <Ano ano="2004">23262</Ano>
+        <Ano ano="2005">23402</Ano>
+        <Ano ano="2006">23604</Ano>
+        <Ano ano="2007">23524</Ano>
+        <Ano ano="2008">23633</Ano>
+        <Ano ano="2009">23693</Ano>
+        <Ano ano="2010">24710</Ano>
+        <Ano ano="2011">24271</Ano>
+        <Ano ano="2012">25224</Ano>
+      </Anos>
+    </Técnicosdediagnósticoeterapêutica>
+  </PessoalAoServiço>
+</sns>

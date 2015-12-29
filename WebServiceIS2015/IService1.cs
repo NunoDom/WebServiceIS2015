@@ -108,9 +108,9 @@ namespace WebServiceIS2015
         string GetCustoMedioFuncionario(String dataInicio, String dataFim);
 
 
-        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroFuncionarios?dataInicio={dataInicio}&dataFim={dataFim}")]
+        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroFuncionarios?dataInicio={dataInicio}&dataFim={dataFim}&token={token}")]
         [OperationContract]
-        List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim);
+        List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim,string token);
 
 
         // TODO: Add your service operations here
