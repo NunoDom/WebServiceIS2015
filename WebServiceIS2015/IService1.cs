@@ -154,19 +154,18 @@ namespace WebServiceIS2015
     [DataContract]
     public class Resultado
     {
-        int ano;
-        public List<Linha> lista= new List<Linha>();
 
+        int ano;
+        List<Linha> lista;
+
+        public Resultado()
+        {
+            lista = new List<Linha>();
+        }
 
         public void AddLinha(Linha linha)
         {
             lista.Add(linha);
-        }
-
-
-        public Linha GetLinha(int index)
-        {
-            return lista[index];
         }
 
 
@@ -176,6 +175,13 @@ namespace WebServiceIS2015
             get { return ano; }
             set { ano = value; }
         }
+        [DataMember]
+        public List<Linha> Lista
+        {
+            get
+            { return lista; }
+        }
+
     }
 
 
