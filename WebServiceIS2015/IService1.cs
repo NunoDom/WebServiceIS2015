@@ -58,10 +58,10 @@ namespace WebServiceIS2015
         bool IsLoggedIn(string token);
 
 
-        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroMedicosEnfermeirosTecnico?dataInicio={dataInicio}&dataFim={dataFim}")]
+        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroMedicosEnfermeirosTecnico?dataInicio={dataInicio}&dataFim={dataFim}&token={token}")]
         //número de médicos, enfermeiros e técnicos;
         [OperationContract]
-        string GetNumeroMedicosEnfermeirosTecnico(DateTime dataInicio, DateTime dataFim);
+        List<Resultado> GetNumeroMedicosEnfermeirosTecnico(string dataInicio, string dataFim, string token);
 
         [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemCustosMedicamentosDespesaTotal?dataInicio={dataInicio}&dataFim={dataFim}")]
         //percentagem dos custos com medicamentos face à despesa total;
@@ -154,9 +154,36 @@ namespace WebServiceIS2015
     [DataContract]
     public class Resultado
     {
+        int ano;
+        public List<Linha> lista= new List<Linha>();
+
+
+        public void AddLinha(Linha linha)
+        {
+            lista.Add(linha);
+        }
+
+
+        public Linha GetLinha(int index)
+        {
+            return lista[index];
+        }
+
+
+        [DataMember]
+        public int Ano
+        {
+            get { return ano; }
+            set { ano = value; }
+        }
+    }
+
+
+    [DataContract]
+    public class Linha
+    {
         string tipo;
         double valor;
-        int ano;
 
         [DataMember]
         public string Tipo
@@ -172,11 +199,5 @@ namespace WebServiceIS2015
             set { valor = value; }
         }
 
-        [DataMember]
-        public int Ano
-        {
-            get { return ano; }
-            set { ano = value; }
-        }
     }
 }

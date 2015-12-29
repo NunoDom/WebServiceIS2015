@@ -247,19 +247,21 @@ namespace WebServiceIS2015
                 XmlNodeList nodePessoaldeEnfermagem = xmlFile.SelectNodes("//PessoalAoServiço/Pessoaldeenfermagem/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
 
 
-                XmlNode nodeAno = nodeMedicos[0];
-                string nodname = nodeAno.Attributes[0].Value;
+                //XmlNode nodeAno = nodeMedicos[0];
+                //string nodname = nodeAno.Attributes[0].Value;
 
-                int x1 = nodeMedicos.Count;
+                //int x1 = nodeMedicos.Count;
                 StringBuilder sb = new StringBuilder();
 
                 for (int i = 0; i < nodeMedicos.Count; i++)
                 {
                     Resultado resultado = new Resultado();
                     resultado.Ano = Int32.Parse(nodeMedicos[i].Attributes[0].Value);
-                    resultado.Tipo = "Total Funcionarios";
-                    resultado.Valor = Int32.Parse(nodeMedicos[i].InnerText)+Int32.Parse(nodePessoaldeEnfermagem[i].InnerText)+Int32.Parse(nodeTecnicosDeDiagonostico[i].InnerText)+Int32.Parse(nodeEnfermeiros[i].InnerText);
+                    Linha linha = new Linha();
 
+                    linha.Tipo = "Total Funcionarios";
+                    linha.Valor = Int32.Parse(nodeMedicos[i].InnerText) + Int32.Parse(nodePessoaldeEnfermagem[i].InnerText) + Int32.Parse(nodeTecnicosDeDiagonostico[i].InnerText) + Int32.Parse(nodeEnfermeiros[i].InnerText);
+                    resultado.AddLinha(linha);
                     resultados.Add(resultado);
                 }
                 return resultados;
@@ -276,9 +278,49 @@ namespace WebServiceIS2015
 
         //número de médicos, enfermeiros e técnicos;
 
-        public string GetNumeroMedicosEnfermeirosTecnico(DateTime dataInicio, DateTime dataFim)
+        public List<Resultado> GetNumeroMedicosEnfermeirosTecnico(string dataInicio, string dataFim, string token)
         {
-            return null;
+            checkAuthentication(token, false);
+            List<Resultado> resultados = new List<Resultado>();
+
+            XmlNodeList nodeMedicos = xmlFile.SelectNodes("//PessoalAoServiço/Médicos/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeTecnicosDeDiagonostico = xmlFile.SelectNodes("//PessoalAoServiço/Técnicosdediagnósticoeterapêutica/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEnfermeiros = xmlFile.SelectNodes("//PessoalAoServiço/Enfermeiros/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodePessoaldeEnfermagem = xmlFile.SelectNodes("//PessoalAoServiço/Pessoaldeenfermagem/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+
+            for (int i = 0; i < nodeMedicos.Count; i++)
+            {
+                Resultado resultado = new Resultado();
+                resultado.Ano = Int32.Parse(nodeMedicos[i].Attributes[0].Value);
+
+                Linha linhaMedico = new Linha();
+                linhaMedico.Tipo = "Total Medicos";
+                linhaMedico.Valor = Int32.Parse(nodeMedicos[i].InnerText);
+                resultado.AddLinha(linhaMedico);
+
+                Linha linhaPessoalDeEnfermagem = new Linha();
+                linhaPessoalDeEnfermagem.Tipo = "Total Pessoal De Enfermagem";
+                linhaPessoalDeEnfermagem.Valor = Int32.Parse(nodePessoaldeEnfermagem[i].InnerText);
+                resultado.AddLinha(linhaPessoalDeEnfermagem);
+
+
+                Linha linhaTecnicosDeDiagonostico = new Linha();
+                linhaTecnicosDeDiagonostico.Tipo = "Total Tecnicos de Diagonostivo";
+                linhaTecnicosDeDiagonostico.Valor = Int32.Parse(nodeTecnicosDeDiagonostico[i].InnerText);
+                resultado.AddLinha(linhaTecnicosDeDiagonostico);
+
+
+                Linha linhaEnfermeiros = new Linha();
+                linhaEnfermeiros.Tipo = "Total Enfermeiros";
+                linhaEnfermeiros.Valor = Int32.Parse(nodeEnfermeiros[i].InnerText);
+                resultado.AddLinha(linhaEnfermeiros);
+
+
+
+                resultados.Add(resultado);
+            }
+
+            return resultados;
         }
 
 
@@ -286,8 +328,8 @@ namespace WebServiceIS2015
         //percentagem dos custos com medicamentos face à despesa total;
         public string GetPercentagemCustosMedicamentosDespesaTotal(DateTime dataInicio, DateTime dataFim)
         {
-            return null;
 
+            return null;
         }
 
         //percentagem dos custos com utentes face à despesa total;
