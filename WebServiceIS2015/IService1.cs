@@ -12,16 +12,18 @@ namespace WebServiceIS2015
     [ServiceContract]
     public interface IService1
     {
-
+        [WebInvoke(Method = "GET", UriTemplate = "/GetData?value={value}")]
         [OperationContract]
         string GetData(int value);
 
-        [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
 
-        [OperationContract]
-        string ReceiveData(string value);
 
+        [WebInvoke(Method = "GET", UriTemplate = "/GetReceive?dataInicio={dataInicio}")]
+        [OperationContract]
+        string ReceiveData(DateTime dataInicio);
+
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetXMLDATA?value={value}")]
         [OperationContract]
         Boolean GetXMLData(string value);
 
@@ -56,6 +58,44 @@ namespace WebServiceIS2015
         bool IsLoggedIn(string token);
 
 
+        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroMedicosEnfermeirosTecnico?dataInicio={dataInicio}&dataFim={dataFim}")]
+        //número de médicos, enfermeiros e técnicos;
+        [OperationContract]
+        string GetNumeroMedicosEnfermeirosTecnico(DateTime dataInicio, DateTime dataFim);
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemCustosMedicamentosDespesaTotal?dataInicio={dataInicio}&dataFim={dataFim}")]
+        //percentagem dos custos com medicamentos face à despesa total;
+        [OperationContract]
+        string GetPercentagemCustosMedicamentosDespesaTotal(DateTime dataInicio, DateTime dataFim);
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemCustosUtentesDespesaTotal?dataInicio={dataInicio}&dataFim={dataFim}")]
+        //percentagem dos custos com utentes face à despesa total;
+        [OperationContract]
+        string GetPercentagemCustosUtentesDespesaTotal(DateTime dataInicio, DateTime dataFim);
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroCOnsultasInternamentosUrgencias?dataInicio={dataInicio}&dataFim={dataFim}")]
+        //número de consultas, internamentos e urgências em hospitais;
+        [OperationContract]
+        string GetNumeroConsultasInternamentosUrgencias(DateTime dataInicio, DateTime dataFim);
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemConsultasIternamentosUrgenciasCentrosSaudeExtencoes?dataInicio={dataInicio}&dataFim={dataFim}")]
+        //percentagem de consultas, internamentos e urgências em centros de saúde e extensões face ao total de ocorrências;
+        [OperationContract]
+        string GetPercentagemConsultasIternamentosUrgenciasCentrosSaudeExtencoes(DateTime dataInicio, DateTime dataFim);
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetMediaCamasHospital?dataInicio={dataInicio}&dataFim={dataFim}")]
+        //média do número de camas disponíveis nos hospitais;
+        [OperationContract]
+        string GetMediaCamasHospital(DateTime dataInicio, DateTime dataFim);
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetRacioNumeroFuncionariosNumeroEstabelecimentos?dataInicio={dataInicio}&dataFim={dataFim}")]
+        // rácio entre o número de funcionários e número de estabelecimentos.
+        [OperationContract]
+        string GetRacioNumeroFuncionariosNumeroEstabelecimentos(DateTime dataInicio, DateTime dataFim);
+
+
+
+
 
 
 
@@ -67,9 +107,10 @@ namespace WebServiceIS2015
         [OperationContract]
         string GetCustoMedioFuncionario(String dataInicio, String dataFim);
 
-        [WebInvoke(Method = "GET", UriTemplate = "/GeNumeroFuncionarios?dataInicio={dataInicio}&dataFim={dataFim}")]
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroFuncionarios?dataInicio={dataInicio}&dataFim={dataFim}")]
         [OperationContract]
-        string GetNumeroFuncionarios(DateTime dataInicio, DateTime dataFim);
+        List<Resultado> GetNumeroFuncionarios(DateTime dataInicio, DateTime dataFim);
 
 
         // TODO: Add your service operations here
@@ -111,23 +152,31 @@ namespace WebServiceIS2015
     }
     
     [DataContract]
-    public class CompositeType
+    public class Resultado
     {
-        bool boolValue = true;
-        string stringValue = "Hello ";
+        string tipo;
+        double valor;
+        int ano;
 
         [DataMember]
-        public bool BoolValue
+        public string Tipo
         {
-            get { return boolValue; }
-            set { boolValue = value; }
+            get { return tipo; }
+            set { tipo = value; }
         }
 
         [DataMember]
-        public string StringValue
+        public double Valor
         {
-            get { return stringValue; }
-            set { stringValue = value; }
+            get { return valor; }
+            set { valor = value; }
+        }
+
+        [DataMember]
+        public int Ano
+        {
+            get { return ano; }
+            set { ano = value; }
         }
     }
 }
