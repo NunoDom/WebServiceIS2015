@@ -63,10 +63,7 @@ namespace WebServiceIS2015
         [OperationContract]
         List<Resultado> GetNumeroMedicosEnfermeirosTecnico(string dataInicio, string dataFim, string token);
 
-        [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemCustosMedicamentosDespesaTotal?dataInicio={dataInicio}&dataFim={dataFim}")]
-        //percentagem dos custos com medicamentos face à despesa total;
-        [OperationContract]
-        string GetPercentagemCustosMedicamentosDespesaTotal(DateTime dataInicio, DateTime dataFim);
+
 
         [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemCustosUtentesDespesaTotal?dataInicio={dataInicio}&dataFim={dataFim}")]
         //percentagem dos custos com utentes face à despesa total;
@@ -105,12 +102,20 @@ namespace WebServiceIS2015
         // custo médio de um funcionário;
         [WebInvoke(Method = "GET", UriTemplate = "/Fs?dataInicio={dataInicio}&dataFim={dataFim}")]
         [OperationContract]
-        string GetCustoMedioFuncionario(String dataInicio, String dataFim);
+        List<Resultado> GetCustoMedioFuncionario(String dataInicio, String dataFim);
 
 
         [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroFuncionarios?dataInicio={dataInicio}&dataFim={dataFim}&token={token}")]
         [OperationContract]
         List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim,string token);
+
+
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemCustosMedicamentosDespesaTotal?dataInicio={dataInicio}&dataFim={dataFim}")]
+        //percentagem dos custos com medicamentos face à despesa total;
+        [OperationContract]
+        List<Resultado> GetPercentagemCustosMedicamentosDespesaTotal(string dataInicio, string dataFim);
+
 
 
         // TODO: Add your service operations here
@@ -175,6 +180,7 @@ namespace WebServiceIS2015
             get { return ano; }
             set { ano = value; }
         }
+
         [DataMember]
         public List<Linha> Lista
         {

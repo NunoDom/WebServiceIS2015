@@ -406,18 +406,18 @@
     </Total>
     <Compessoal>
       <Anos>
-        <Ano ano="1980">219,1</Ano>
-        <Ano ano="1981">288,1</Ano>
-        <Ano ano="1982">321,7</Ano>
-        <Ano ano="1983">401,1</Ano>
-        <Ano ano="1984">494,2</Ano>
-        <Ano ano="1985">648,3</Ano>
-        <Ano ano="1986">793,4</Ano>
-        <Ano ano="1987">954</Ano>
-        <Ano ano="1988">1163,3</Ano>
-        <Ano ano="1989">1362,9</Ano>
-        <Ano ano="1990">1721,6</Ano>
-        <Ano ano="1991">2208,2</Ano>
+        <Ano ano="1980">0</Ano>
+        <Ano ano="1981">0</Ano>
+        <Ano ano="1982">0</Ano>
+        <Ano ano="1983">0</Ano>
+        <Ano ano="1984">0</Ano>
+        <Ano ano="1985">308,3</Ano>
+        <Ano ano="1986">0</Ano>
+        <Ano ano="1987">0</Ano>
+        <Ano ano="1988">0</Ano>
+        <Ano ano="1989">0</Ano>
+        <Ano ano="1990">911,6</Ano>
+        <Ano ano="1991">1181,6</Ano>
         <Ano ano="1992">2564,2</Ano>
         <Ano ano="1993">2883,7</Ano>
         <Ano ano="1994">3100,9</Ano>
@@ -426,7 +426,7 @@
         <Ano ano="1997">4208,6</Ano>
         <Ano ano="1998">4704,4</Ano>
         <Ano ano="1999">5340,6</Ano>
-        <Ano ano="2000">5977,7</Ano>
+        <Ano ano="2000">2596,1</Ano>
         <Ano ano="2001">6585,5</Ano>
         <Ano ano="2002">7067,2</Ano>
         <Ano ano="2003">7704,7</Ano>
@@ -758,7 +758,7 @@
         <Ano ano="1997">22067</Ano>
         <Ano ano="1998">21690</Ano>
         <Ano ano="1999">22406</Ano>
-        <Ano ano="2000">70</Ano>
+        <Ano ano="2000">22879</Ano>
         <Ano ano="2001">22712</Ano>
         <Ano ano="2002">23542</Ano>
         <Ano ano="2003">23031</Ano>
@@ -786,7 +786,7 @@
         <Ano ano="1997">22067</Ano>
         <Ano ano="1998">21690</Ano>
         <Ano ano="1999">22406</Ano>
-        <Ano ano="2000">10</Ano>
+        <Ano ano="2000">33841</Ano>
         <Ano ano="2001">22712</Ano>
         <Ano ano="2002">23542</Ano>
         <Ano ano="2003">23031</Ano>
@@ -814,7 +814,7 @@
         <Ano ano="1997">22067</Ano>
         <Ano ano="1998">21690</Ano>
         <Ano ano="1999">22406</Ano>
-        <Ano ano="2000">10</Ano>
+        <Ano ano="2000">31283</Ano>
         <Ano ano="2001">22712</Ano>
         <Ano ano="2002">23542</Ano>
         <Ano ano="2003">23031</Ano>
@@ -842,7 +842,7 @@
         <Ano ano="1997">22067</Ano>
         <Ano ano="1998">21690</Ano>
         <Ano ano="1999">22406</Ano>
-        <Ano ano="2000">10</Ano>
+        <Ano ano="2000">6380</Ano>
         <Ano ano="2001">22712</Ano>
         <Ano ano="2002">23542</Ano>
         <Ano ano="2003">23031</Ano>
