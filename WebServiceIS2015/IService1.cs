@@ -65,10 +65,7 @@ namespace WebServiceIS2015
 
 
 
-        [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemCustosUtentesDespesaTotal?dataInicio={dataInicio}&dataFim={dataFim}")]
-        //percentagem dos custos com utentes face à despesa total;
-        [OperationContract]
-        string GetPercentagemCustosUtentesDespesaTotal(DateTime dataInicio, DateTime dataFim);
+
 
         [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroCOnsultasInternamentosUrgencias?dataInicio={dataInicio}&dataFim={dataFim}")]
         //número de consultas, internamentos e urgências em hospitais;
@@ -116,6 +113,11 @@ namespace WebServiceIS2015
         [OperationContract]
         List<Resultado> GetPercentagemCustosMedicamentosDespesaTotal(string dataInicio, string dataFim);
 
+
+        [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemCustosPessoalDespesaTotal?dataInicio={dataInicio}&dataFim={dataFim}")]
+        //percentagem dos custos com utentes face à despesa total;
+        [OperationContract]
+        List<Resultado> GetPercentagemCustosPessoalDespesaTotal(string dataInicio, string dataFim);
 
 
         // TODO: Add your service operations here

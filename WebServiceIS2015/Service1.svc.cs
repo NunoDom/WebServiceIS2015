@@ -21,9 +21,6 @@ namespace WebServiceIS2015
         private Dictionary<string, Token> tokens;
         private static string FILEPATH;
 
-        /// <summary>
-        /// /asdasndkjasdfjksdfhsjdkhfsjdkfgsdhfgsdhfgshjgasdhjfgsjfhsk
-        /// </summary>
 
         public Service1()
         {
@@ -255,11 +252,6 @@ namespace WebServiceIS2015
             return resultados;
         }
 
-        public String GetCustoMedioMedicoEnfTec(DateTime dataInicio, DateTime dataFim) {
-           
-            return null;
-        }
-
 
         public List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim, string token)
         {
@@ -352,23 +344,32 @@ namespace WebServiceIS2015
            // checkAuthentication(token, false);
             List<Resultado> resultados = new List<Resultado>();
 
-                XmlNodeList nodeEncargosMedSns = xmlFile.SelectNodes("//PessoalAoServiço/Médicos/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
-                XmlNodeList nodeEncargosMedUtente = xmlFile.SelectNodes("//PessoalAoServiço/Técnicosdediagnósticoeterapêutica/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
-                XmlNodeList nodeDespesaTotal = xmlFile.SelectNodes("//PessoalAoServiço/Enfermeiros/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEncargosMedSns = xmlFile.SelectNodes("//Encargoscommedicamentos/DoSNS/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEncargosMedUtente = xmlFile.SelectNodes("//Encargoscommedicamentos/Doutente/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+                XmlNodeList nodeDespesaTotal = xmlFile.SelectNodes("//DespesadoSNS/Total/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
 
                 for (int i = 0; i < nodeEncargosMedSns.Count; i++)
                 {
                     Resultado resultado = new Resultado();
                     resultado.Ano = Int32.Parse(nodeEncargosMedSns[i].Attributes[0].Value);
-
-
                     Linha linha = new Linha();
 
+                    
                     double EncargosMedicamentosTotal = double.Parse(nodeEncargosMedSns[i].InnerText) + double.Parse(nodeEncargosMedUtente[i].InnerText);
                     double DespesaTotal = double.Parse(nodeDespesaTotal[i].InnerText);
                     double ResultadoPercentagem = (EncargosMedicamentosTotal * 100) / DespesaTotal;
+
+                    if (double.Parse(nodeEncargosMedSns[i].InnerText) == 0 || double.Parse(nodeEncargosMedUtente[i].InnerText) == 0 || double.Parse(nodeDespesaTotal[i].InnerText)==0)
+                    {
+                        linha.Tipo = "Valores Insuficientes";
+                        linha.Valor = 0;
+
+                    }
+                    else { 
                     linha.Tipo = "Percentagem de custos com Medicamentos";
                     linha.Valor = ResultadoPercentagem;
+                    
+                    }
                     resultado.AddLinha(linha);
                     resultados.Add(resultado);
                 }
@@ -378,9 +379,41 @@ namespace WebServiceIS2015
 
         //percentagem dos custos com utentes face à despesa total;
 
-        public string GetPercentagemCustosUtentesDespesaTotal(DateTime dataInicio, DateTime dataFim)
+        public List<Resultado> GetPercentagemCustosPessoalDespesaTotal(string dataInicio, string dataFim)
         {
-            return null;
+            // checkAuthentication(token, false);
+            List<Resultado> resultados = new List<Resultado>();
+
+            XmlNodeList nodeDespesaPessoal = xmlFile.SelectNodes("//DespesadoSNS/Compessoal/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeDespesaTotal = xmlFile.SelectNodes("//DespesadoSNS/Total/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+
+            for (int i = 0; i < nodeDespesaPessoal.Count; i++)
+            {
+                Resultado resultado = new Resultado();
+                resultado.Ano = Int32.Parse(nodeDespesaPessoal[i].Attributes[0].Value);
+                Linha linha = new Linha();
+
+
+                double DespesaPessoal = double.Parse(nodeDespesaPessoal[i].InnerText);
+                double DespesaTotal = double.Parse(nodeDespesaTotal[i].InnerText);
+                double ResultadoPercentagem = (DespesaPessoal * 100) / DespesaTotal;
+
+                if (double.Parse(nodeDespesaPessoal[i].InnerText) == 0 || double.Parse(nodeDespesaTotal[i].InnerText) == 0)
+                {
+                    linha.Tipo = "Valores Insuficientes";
+                    linha.Valor = 0;
+
+                }
+                else
+                {
+                    linha.Tipo = "Percentagem de custos com Pessoal";
+                    linha.Valor = ResultadoPercentagem;
+
+                }
+                resultado.AddLinha(linha);
+                resultados.Add(resultado);
+            }
+            return resultados;
 
         }
 
