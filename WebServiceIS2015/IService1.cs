@@ -66,15 +66,15 @@ namespace WebServiceIS2015
         List<Resultado> GetCustoMedioFuncionario(int dataInicio, int dataFim);
 
 
-        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroFuncionarios?dataInicio={dataInicio}&dataFim={dataFim}&token={token}")]
+        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroFuncionarios?dataInicio={dataInicio}&dataFim={dataFim}")]
         [OperationContract]
-        List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim,string token);
+        List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim);
 
 
-        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroMedicosEnfermeirosTecnico?dataInicio={dataInicio}&dataFim={dataFim}&token={token}")]
+        [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroMedicosEnfermeirosTecnico?dataInicio={dataInicio}&dataFim={dataFim}")]
         //número de médicos, enfermeiros e técnicos;
         [OperationContract]
-        List<Resultado> GetNumeroMedicosEnfermeirosTecnico(int dataInicio, int dataFim, string token);
+        List<Resultado> GetNumeroMedicosEnfermeirosTecnico(int dataInicio, int dataFim);
 
 
         [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemCustosMedicamentosDespesaTotal?dataInicio={dataInicio}&dataFim={dataFim}")]

@@ -253,9 +253,9 @@ namespace WebServiceIS2015
         }
 
 
-        public List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim, string token)
+        public List<Resultado> GetNumeroFuncionarios(int dataInicio, int dataFim)
         {
-            checkAuthentication(token, false);
+            //checkAuthentication(token, false);
             List<Resultado> resultados = new List<Resultado>();
 
             if (xmlFile != null)
@@ -291,9 +291,9 @@ namespace WebServiceIS2015
 
         //número de médicos, enfermeiros e técnicos;
 
-        public List<Resultado> GetNumeroMedicosEnfermeirosTecnico(int dataInicio, int dataFim, string token)
+        public List<Resultado> GetNumeroMedicosEnfermeirosTecnico(int dataInicio, int dataFim)
         {
-            checkAuthentication(token, false);
+            //checkAuthentication(token, false);
             List<Resultado> resultados = new List<Resultado>();
 
             XmlNodeList nodeMedicos = xmlFile.SelectNodes("//PessoalAoServiço/Médicos/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
