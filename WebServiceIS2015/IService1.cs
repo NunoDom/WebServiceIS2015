@@ -91,24 +91,24 @@ namespace WebServiceIS2015
         [WebInvoke(Method = "GET", UriTemplate = "/GetNumeroConsultasInternamentosUrgencias?dataInicio={dataInicio}&dataFim={dataFim}")]
         //número de consultas, internamentos e urgências em hospitais;
         [OperationContract]
-        string GetNumeroConsultasInternamentosUrgencias(int dataInicio, int dataFim);
+        List<Resultado> GetNumeroConsultasInternamentosUrgencias(int dataInicio, int dataFim);
 
 
         [WebInvoke(Method = "GET", UriTemplate = "/GetPercentagemConsultasInternamentosUrgenciasCentrosSaudeExtencoes?dataInicio={dataInicio}&dataFim={dataFim}")]
         //percentagem de consultas, internamentos e urgências em centros de saúde e extensões face ao total de ocorrências;
         [OperationContract]
-        string GetPercentagemConsultasInternamentosUrgenciasCentrosSaudeExtencoes(int dataInicio, int dataFim);
+        List<Resultado> GetPercentagemConsultasInternamentosUrgenciasCentrosSaudeExtencoes(int dataInicio, int dataFim);
 
         [WebInvoke(Method = "GET", UriTemplate = "/GetMediaCamasHospital?dataInicio={dataInicio}&dataFim={dataFim}")]
         //média do número de camas disponíveis nos hospitais;
         [OperationContract]
-        string GetMediaCamasHospital(int dataInicio, int dataFim);
+        List<Resultado> GetMediaCamasHospital(int dataInicio, int dataFim);
 
 
         [WebInvoke(Method = "GET", UriTemplate = "/GetRacioNumeroFuncionariosNumeroEstabelecimentos?dataInicio={dataInicio}&dataFim={dataFim}")]
         // rácio entre o número de funcionários e número de estabelecimentos.
         [OperationContract]
-        string GetRacioNumeroFuncionariosNumeroEstabelecimentos(int dataInicio, int dataFim);
+        List<Resultado> GetRacioNumeroFuncionariosNumeroEstabelecimentos(int dataInicio, int dataFim);
 
         // TODO: Add your service operations here
     }

@@ -419,33 +419,178 @@ namespace WebServiceIS2015
 
         //número de consultas, internamentos e urgências em hospitais;
 
-        public string GetNumeroConsultasInternamentosUrgencias(int dataInicio, int dataFim)
+        public List<Resultado> GetNumeroConsultasInternamentosUrgencias(int dataInicio, int dataFim)
         {
-            return null;
+            //checkAuthentication(token, false);
+            List<Resultado> resultados = new List<Resultado>();
+
+            XmlNodeList nodeConsultas = xmlFile.SelectNodes("//Consultas/Hospitais/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeInternamentos = xmlFile.SelectNodes("//Internamentos/Hospitais/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeUrgencias = xmlFile.SelectNodes("//Urgências/Hospitais/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+
+            for (int i = 0; i < nodeConsultas.Count; i++)
+            {
+                Resultado resultado = new Resultado();
+                resultado.Ano = Int32.Parse(nodeConsultas[i].Attributes[0].Value);
+
+                Linha linhaConsultas = new Linha();
+                linhaConsultas.Tipo = "Total Consultas Hopitais";
+                linhaConsultas.Valor = double.Parse(nodeConsultas[i].InnerText);
+                resultado.AddLinha(linhaConsultas);
+
+                Linha linhaInternamentosHopitais = new Linha();
+                linhaInternamentosHopitais.Tipo = "Total Internamentos Hopitais";
+                linhaInternamentosHopitais.Valor = double.Parse(nodeInternamentos[i].InnerText);
+                resultado.AddLinha(linhaInternamentosHopitais);
+
+
+                Linha linhaUrgênciasHopitais = new Linha();
+                linhaUrgênciasHopitais.Tipo = "Total Urgências Hopitais";
+                linhaUrgênciasHopitais.Valor = double.Parse(nodeUrgencias[i].InnerText);
+                resultado.AddLinha(linhaUrgênciasHopitais);
+
+                resultados.Add(resultado);
+            }
+
+            return resultados;
 
         }
 
         //percentagem de consultas, internamentos e urgências em centros de saúde e extensões face ao total de ocorrências;
 
-        public string GetPercentagemConsultasInternamentosUrgenciasCentrosSaudeExtencoes(int dataInicio, int dataFim)
+        public List<Resultado> GetPercentagemConsultasInternamentosUrgenciasCentrosSaudeExtencoes(int dataInicio, int dataFim)
         {
-            return null;
+            // checkAuthentication(token, false);
+            List<Resultado> resultados = new List<Resultado>();
+
+            XmlNodeList nodeConsultasCS = xmlFile.SelectNodes("//Consultas/Centrosdesaúde/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeInternamentosCS = xmlFile.SelectNodes("//Internamentos/Centrosdesaúde/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeUrgenciasCS = xmlFile.SelectNodes("//Urgências/Centrosdesaúde/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+
+            XmlNodeList nodeConsultasTotal = xmlFile.SelectNodes("//Consultas/Total/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeInternamentosTotal = xmlFile.SelectNodes("//Internamentos/Total/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeUrgenciasTotal = xmlFile.SelectNodes("//Urgências/Total/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+
+
+
+            for (int i = 0; i < nodeConsultasCS.Count; i++)
+            {
+                Resultado resultado = new Resultado();
+                resultado.Ano = Int32.Parse(nodeConsultasCS[i].Attributes[0].Value);
+
+                
+
+
+                double ConsultaCS = double.Parse(nodeConsultasCS[i].InnerText);
+                double ConsultaTotal = double.Parse(nodeConsultasTotal[i].InnerText);
+                double ResultadoPercentagemConsultas = (ConsultaCS * 100) / ConsultaTotal;
+
+                Linha linhaConsulta = new Linha();
+                linhaConsulta.Valor = ResultadoPercentagemConsultas;
+                linhaConsulta.Tipo = "Resultado Consulta";
+                resultado.AddLinha(linhaConsulta);
+
+                double InternamentosCS = double.Parse(nodeInternamentosCS[i].InnerText);
+                double InternamentosTotal = double.Parse(nodeInternamentosTotal[i].InnerText);
+                double ResultadoPercentagemInternamentos = (InternamentosCS * 100) / InternamentosTotal;
+
+                Linha linhaInternamento = new Linha();
+                linhaInternamento.Valor = ResultadoPercentagemInternamentos;
+                linhaInternamento.Tipo = "Resultado Internamento";
+                resultado.AddLinha(linhaInternamento);
+
+                double UrgenciasCS = double.Parse(nodeUrgenciasCS[i].InnerText);
+                double UrgenciasTotal = double.Parse(nodeUrgenciasTotal[i].InnerText);
+                double ResultadoPercentagemUrgencias = (UrgenciasCS * 100) / UrgenciasTotal;
+
+                Linha linhaUrgencias = new Linha();
+                linhaUrgencias.Valor = ResultadoPercentagemUrgencias;
+                linhaUrgencias.Tipo = "Resultado Urgencias";
+                resultado.AddLinha(linhaUrgencias);
+
+                resultados.Add(resultado);
+            }
+            return resultados;
 
         }
 
         //média do número de camas disponíveis nos hospitais;
 
-        public string GetMediaCamasHospital(int dataInicio, int dataFim)
+        public List<Resultado> GetMediaCamasHospital(int dataInicio, int dataFim)
         {
-            return null;
+            //checkAuthentication(token, false);
+            List<Resultado> resultados = new List<Resultado>();
+
+            XmlNodeList nodeLotacaoHG = xmlFile.SelectNodes("//Lotação/Hospitaisgerais/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeLotacaoHE = xmlFile.SelectNodes("//Lotação/Hospitaisespecializados/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEstabelecimentoSaudeHG = xmlFile.SelectNodes("//Estabelecimentosdesaúde/Hospitaisgerais/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEstabelecimentoSaudeHE = xmlFile.SelectNodes("//Estabelecimentosdesaúde/Hospitaisespecializados/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+
+            for (int i = 0; i < nodeLotacaoHG.Count; i++)
+            {
+                Resultado resultado = new Resultado();
+                resultado.Ano = Int32.Parse(nodeLotacaoHG[i].Attributes[0].Value);
+                Linha linha = new Linha();
+
+                double LotacaoHG = double.Parse(nodeLotacaoHG[i].InnerText);
+                double LotacaoHE = double.Parse(nodeLotacaoHE[i].InnerText);
+                double EstabelecimentoSaudeHG = double.Parse(nodeEstabelecimentoSaudeHG[i].InnerText);
+                double EstabelecimentoSaudeHE = double.Parse(nodeEstabelecimentoSaudeHE[i].InnerText);
+                double ResultadoMedia = (LotacaoHG + LotacaoHE) / (EstabelecimentoSaudeHG + EstabelecimentoSaudeHE);
+
+                linha.Tipo = "Média de camas disponivéis";
+                linha.Valor = ResultadoMedia;
+
+
+                resultado.AddLinha(linha);
+                resultados.Add(resultado);
+            }
+
+            return resultados;
 
         }
 
         // rácio entre o número de funcionários e número de estabelecimentos.
 
-        public string GetRacioNumeroFuncionariosNumeroEstabelecimentos(int dataInicio, int dataFim)
+        public List<Resultado> GetRacioNumeroFuncionariosNumeroEstabelecimentos(int dataInicio, int dataFim)
         {
-            return null;
+            //checkAuthentication(token, false);
+            List<Resultado> resultados = new List<Resultado>();
+
+            XmlNodeList nodeMedicos = xmlFile.SelectNodes("//PessoalAoServiço/Médicos/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeTecnicosDeDiagonostico = xmlFile.SelectNodes("//PessoalAoServiço/Técnicosdediagnósticoeterapêutica/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEnfermeiros = xmlFile.SelectNodes("//PessoalAoServiço/Enfermeiros/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodePessoaldeEnfermagem = xmlFile.SelectNodes("//PessoalAoServiço/Pessoaldeenfermagem/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEstabelecimentoSaudeHG = xmlFile.SelectNodes("//Estabelecimentosdesaúde/Hospitaisgerais/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEstabelecimentoSaudeHE = xmlFile.SelectNodes("//Estabelecimentosdesaúde/Hospitaisespecializados/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEstabelecimentoCS = xmlFile.SelectNodes("//Estabelecimentosdesaúde/Centrosdesaúde/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+            XmlNodeList nodeEstabelecimentoSaudeECS = xmlFile.SelectNodes("//Estabelecimentosdesaúde/Extensõesdecentrosdesaúde/Anos/Ano[@ano>='" + dataInicio + "'and @ano<='" + dataFim + "']");
+
+            for (int i = 0; i < nodeMedicos.Count; i++)
+            {
+                Resultado resultado = new Resultado();
+                resultado.Ano = Int32.Parse(nodeMedicos[i].Attributes[0].Value);
+                Linha linha = new Linha();
+
+                double Medicos = double.Parse(nodeMedicos[i].InnerText);
+                double TecnicosDeDiagonostico = double.Parse(nodeTecnicosDeDiagonostico[i].InnerText);
+                double Enfermeiros = double.Parse(nodeEnfermeiros[i].InnerText);
+                double PessoaldeEnfermagem = double.Parse(nodePessoaldeEnfermagem[i].InnerText);
+                double EstabelecimentoSaudeHG = double.Parse(nodeEstabelecimentoSaudeHG[i].InnerText);
+                double EstabelecimentoSaudeHE = double.Parse(nodeEstabelecimentoSaudeHE[i].InnerText);
+                double EstabelecimentoCS = double.Parse(nodeEstabelecimentoCS[i].InnerText);
+                double EstabelecimentoSaudeECS = double.Parse(nodeEstabelecimentoSaudeECS[i].InnerText);
+
+                double ResultadoRacio = (Medicos + TecnicosDeDiagonostico + Enfermeiros + PessoaldeEnfermagem) / (EstabelecimentoSaudeHG + EstabelecimentoSaudeHE + EstabelecimentoCS + EstabelecimentoSaudeECS);
+
+                linha.Tipo = "Rácio entre funcionários e estabelecimentos";
+                linha.Valor = ResultadoRacio;
+
+
+                resultado.AddLinha(linha);
+                resultados.Add(resultado);
+            }
+            return resultados;
 
         }
 
