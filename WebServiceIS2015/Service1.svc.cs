@@ -219,7 +219,7 @@ namespace WebServiceIS2015
            
         }
 
-        public List<Resultado> GetCustoMedioFuncionario(String dataInicio, String dataFim)
+        public List<Resultado> GetCustoMedioFuncionario(int dataInicio, int dataFim)
         {
             //checkAuthentication(token, false);
             List<Resultado> resultados = new List<Resultado>();
@@ -291,7 +291,7 @@ namespace WebServiceIS2015
 
         //número de médicos, enfermeiros e técnicos;
 
-        public List<Resultado> GetNumeroMedicosEnfermeirosTecnico(string dataInicio, string dataFim, string token)
+        public List<Resultado> GetNumeroMedicosEnfermeirosTecnico(int dataInicio, int dataFim, string token)
         {
             checkAuthentication(token, false);
             List<Resultado> resultados = new List<Resultado>();
@@ -339,7 +339,7 @@ namespace WebServiceIS2015
 
 
         //percentagem dos custos com medicamentos face à despesa total;
-        public List<Resultado> GetPercentagemCustosMedicamentosDespesaTotal(string dataInicio, string dataFim)
+        public List<Resultado> GetPercentagemCustosMedicamentosDespesaTotal(int dataInicio, int dataFim)
         {
            // checkAuthentication(token, false);
             List<Resultado> resultados = new List<Resultado>();
@@ -379,7 +379,7 @@ namespace WebServiceIS2015
 
         //percentagem dos custos com utentes face à despesa total;
 
-        public List<Resultado> GetPercentagemCustosPessoalDespesaTotal(string dataInicio, string dataFim)
+        public List<Resultado> GetPercentagemCustosPessoalDespesaTotal(int dataInicio, int dataFim)
         {
             // checkAuthentication(token, false);
             List<Resultado> resultados = new List<Resultado>();
@@ -419,7 +419,7 @@ namespace WebServiceIS2015
 
         //número de consultas, internamentos e urgências em hospitais;
 
-        public string GetNumeroConsultasInternamentosUrgencias(DateTime dataInicio, DateTime dataFim)
+        public string GetNumeroConsultasInternamentosUrgencias(int dataInicio, int dataFim)
         {
             return null;
 
@@ -427,7 +427,7 @@ namespace WebServiceIS2015
 
         //percentagem de consultas, internamentos e urgências em centros de saúde e extensões face ao total de ocorrências;
 
-        public string GetPercentagemConsultasIternamentosUrgenciasCentrosSaudeExtencoes(DateTime dataInicio, DateTime dataFim)
+        public string GetPercentagemConsultasInternamentosUrgenciasCentrosSaudeExtencoes(int dataInicio, int dataFim)
         {
             return null;
 
@@ -435,7 +435,7 @@ namespace WebServiceIS2015
 
         //média do número de camas disponíveis nos hospitais;
 
-        public string GetMediaCamasHospital(DateTime dataInicio, DateTime dataFim)
+        public string GetMediaCamasHospital(int dataInicio, int dataFim)
         {
             return null;
 
@@ -443,7 +443,7 @@ namespace WebServiceIS2015
 
         // rácio entre o número de funcionários e número de estabelecimentos.
 
-        public string GetRacioNumeroFuncionariosNumeroEstabelecimentos(DateTime dataInicio, DateTime dataFim)
+        public string GetRacioNumeroFuncionariosNumeroEstabelecimentos(int dataInicio, int dataFim)
         {
             return null;
 

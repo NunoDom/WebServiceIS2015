@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <sns>
   <Camasnoshospitaisgeraispor100milhab.>
     <Anos>
@@ -744,6 +743,8 @@
         <Ano ano="2013">0</Ano>
       </Anos>
     </Centrosdesaúdeeextensões>
+  </Lotação>
+  <PessoalAoServiço>
     <Médicos>
       <Anos>
         <Ano ano="1985">21275</Ano>
@@ -856,5 +857,5 @@
         <Ano ano="2012">7587</Ano>
       </Anos>
     </Técnicosdediagnósticoeterapêutica>
-  </Lotação>
+  </PessoalAoServiço>
 </sns>
